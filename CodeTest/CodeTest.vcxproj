@@ -153,13 +153,19 @@
   <ItemGroup>
     <ClCompile Include="binaryTree.cpp" />
     <ClCompile Include="CodeTest.cpp" />
+    <ClCompile Include="insertionsort.cpp" />
     <ClCompile Include="Pack.cpp" />
     <ClCompile Include="qsort.cpp" />
+    <ClCompile Include="selectionsort.cpp" />
+    <ClCompile Include="shellsort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binaryTree.h" />
+    <ClInclude Include="insertionsort.h" />
     <ClInclude Include="Pack.h" />
     <ClInclude Include="qsort.h" />
+    <ClInclude Include="selectionsort.h" />
+    <ClInclude Include="shellsort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+CodeTest/.vs/CodeTest/v16/.suo
+
+*.db
+
+*.ipch
+
+CodeTest/.vs/CodeTest/v16/
+
+CodeTest/x64/Debug/
+
+*.user

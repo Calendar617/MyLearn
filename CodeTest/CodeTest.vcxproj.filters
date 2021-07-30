@@ -27,6 +27,15 @@
     <ClCompile Include="qsort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="selectionsort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="insertionsort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="shellsort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binaryTree.h">
@@ -36,6 +45,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="qsort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="selectionsort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="insertionsort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shellsort.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -7,6 +7,8 @@
 #include <vector>
 #include "binaryTree.h"
 #include "qsort.h"
+#include "selectionsort.h"
+#include "insertionsort.h"
 
 using namespace std;
 
@@ -63,18 +65,33 @@ void KMP()
 	}
 }
 
-int main()
+//随机产生数据
+void generateData(vector<int>& data)
 {
-	std::vector<int> data;
-
+	data.clear();
 	for (int i = 0; i < 10; i++)
 	{
 		data.push_back(rand() % 100);
 	}
+}
 
+int main()
+{
+	std::vector<int> data;
+	generateData(data);
+
+	//快速排序
 	int left = 0;
 	int right = (int)data.size() - 1;
 	qsort::sort(data, left, right);
+
+	//选择排序
+	generateData(data);
+	selectionsort::sort(data);
+
+	//插入排序
+	generateData(data);
+	insertionsort::sort(data);
 
 	bool result = IsPrimer(10);
 
