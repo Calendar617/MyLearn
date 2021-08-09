@@ -9,6 +9,7 @@
 #include "qsort.h"
 #include "selectionsort.h"
 #include "insertionsort.h"
+#include "breathfirstsearch.h"
 
 using namespace std;
 
@@ -93,6 +94,8 @@ int main()
 	generateData(data);
 	insertionsort::sort(data);
 
+	breathfirstsearch::search();
+
 	bool result = IsPrimer(10);
 
 	int a = 1;
@@ -104,5 +107,5 @@ int main()
 	BinaryTree tree;
 	tree.Create();
 
-    std::cout << "Hello World!\n";
+    //std::cout << "Hello World!\n";
 }

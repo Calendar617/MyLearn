@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="binaryTree.cpp" />
+    <ClCompile Include="breathfirstsearch.cpp" />
     <ClCompile Include="CodeTest.cpp" />
     <ClCompile Include="insertionsort.cpp" />
     <ClCompile Include="Pack.cpp" />
@@ -161,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binaryTree.h" />
+    <ClInclude Include="breathfirstsearch.h" />
     <ClInclude Include="insertionsort.h" />
     <ClInclude Include="Pack.h" />
     <ClInclude Include="qsort.h" />

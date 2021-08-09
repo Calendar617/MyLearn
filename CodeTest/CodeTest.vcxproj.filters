@@ -36,6 +36,9 @@
     <ClCompile Include="shellsort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="breathfirstsearch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binaryTree.h">
@@ -54,6 +57,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="shellsort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="breathfirstsearch.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
