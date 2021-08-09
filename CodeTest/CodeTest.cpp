@@ -10,6 +10,7 @@
 #include "selectionsort.h"
 #include "insertionsort.h"
 #include "breathfirstsearch.h"
+#include "shellsort.h"
 #include "lengthOfLongestSubstring.h"
 
 using namespace std;
@@ -97,8 +98,9 @@ int main()
 
 	breathfirstsearch::search();
 
+	generateData(data);
+	shellsort::sort(data);
 	int result = lengthOfLongestSubstring::process("fasdfasfsdafsfsafasd");
-
 	bool result = IsPrimer(10);
 
 	int a = 1;
