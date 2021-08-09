@@ -98,10 +98,13 @@ int main()
 
 	breathfirstsearch::search();
 
+	//希尔排序
 	generateData(data);
 	shellsort::sort(data);
+
 	int result = lengthOfLongestSubstring::process("fasdfasfsdafsfsafasd");
-	bool result = IsPrimer(10);
+
+	bool hr = IsPrimer(10);
 
 	int a = 1;
 	int b = 2;
