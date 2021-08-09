@@ -155,6 +155,7 @@
     <ClCompile Include="breathfirstsearch.cpp" />
     <ClCompile Include="CodeTest.cpp" />
     <ClCompile Include="insertionsort.cpp" />
+    <ClCompile Include="lengthOfLongestSubstring.cpp" />
     <ClCompile Include="Pack.cpp" />
     <ClCompile Include="qsort.cpp" />
     <ClCompile Include="selectionsort.cpp" />
@@ -164,6 +165,7 @@
     <ClInclude Include="binaryTree.h" />
     <ClInclude Include="breathfirstsearch.h" />
     <ClInclude Include="insertionsort.h" />
+    <ClInclude Include="lengthOfLongestSubstring.h" />
     <ClInclude Include="Pack.h" />
     <ClInclude Include="qsort.h" />
     <ClInclude Include="selectionsort.h" />
