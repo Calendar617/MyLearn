@@ -10,6 +10,7 @@
 #include "selectionsort.h"
 #include "insertionsort.h"
 #include "breathfirstsearch.h"
+#include "shellsort.h"
 
 using namespace std;
 
@@ -95,6 +96,10 @@ int main()
 	insertionsort::sort(data);
 
 	breathfirstsearch::search();
+
+	//希尔排序
+	generateData(data);
+	shellsort::sort(data);
 
 	bool result = IsPrimer(10);
 
