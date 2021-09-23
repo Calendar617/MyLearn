@@ -9,11 +9,13 @@ void selectionsort::sort(vector<int>& data)
 {
 	for (int i = 0; i < data.size() - 1; ++i)
 	{
+		//记录最小
 		int min = i;
 		for (int j = i + 1; j < data.size(); ++j)
 		{
 			if (data[j] < data[min])
 			{
+				//替换最小值
 				min = j;
 			}
 		}

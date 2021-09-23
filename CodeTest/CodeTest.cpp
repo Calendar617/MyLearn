@@ -5,6 +5,7 @@
 #include <string>
 #include <math.h>
 #include <vector>
+#include <stack>
 #include "binaryTree.h"
 #include "qsort.h"
 #include "selectionsort.h"
@@ -12,6 +13,7 @@
 #include "breathfirstsearch.h"
 #include "shellsort.h"
 #include "lengthOfLongestSubstring.h"
+#include "RBTree.h"
 
 using namespace std;
 
@@ -76,6 +78,76 @@ void generateData(vector<int>& data)
 	{
 		data.push_back(rand() % 100);
 	}
+}
+
+///旋转数组最小值
+int minNumberInRotateArray(vector<int> rotateArray)
+{
+	if (rotateArray.size() <= 0)
+	{
+		return 0;
+	}
+
+	int first = 0, last = rotateArray.size() - 1;
+	while (first < last)
+	{
+		if (rotateArray[first] < rotateArray[last]) 
+		{
+			return rotateArray[first];
+		}
+
+		int mid = first + ((last - first) >> 1);
+		if (rotateArray[mid] > rotateArray[last])
+		{
+			first = mid + 1;
+		}
+		else if (rotateArray[mid] < rotateArray[last])
+		{
+			last = mid;
+		}
+		else
+		{
+			--last;
+		}
+	}
+	return rotateArray[first];
+}
+
+///二叉树镜像
+struct TreeNode
+{
+	int value;
+	TreeNode* left;
+	TreeNode* right;
+};
+
+TreeNode* Mirror(TreeNode* root)
+{
+	if (!root)
+	{
+		return NULL;
+	}
+
+	stack<TreeNode*> stack;
+	TreeNode* temp = NULL;
+	stack.push(root);
+	while (!stack.empty())
+	{
+		TreeNode* node = stack.top();
+		stack.pop();
+		if (node->left)
+		{
+			stack.push(node->left);
+		}
+		if (node->right)
+		{
+			stack.push(node->right);
+		}
+		temp = node->left;
+		node->left = node->right;
+		node->right = temp;
+	}
+	return root;
 }
 
 int main()
