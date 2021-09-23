@@ -154,18 +154,24 @@
     <ClCompile Include="binaryTree.cpp" />
     <ClCompile Include="breathfirstsearch.cpp" />
     <ClCompile Include="CodeTest.cpp" />
+    <ClCompile Include="heapsort.cpp" />
     <ClCompile Include="insertionsort.cpp" />
+    <ClCompile Include="lengthOfLongestSubstring.cpp" />
     <ClCompile Include="Pack.cpp" />
     <ClCompile Include="qsort.cpp" />
+    <ClCompile Include="RBTree.cpp" />
     <ClCompile Include="selectionsort.cpp" />
     <ClCompile Include="shellsort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="binaryTree.h" />
     <ClInclude Include="breathfirstsearch.h" />
+    <ClInclude Include="heapsort.h" />
     <ClInclude Include="insertionsort.h" />
+    <ClInclude Include="lengthOfLongestSubstring.h" />
     <ClInclude Include="Pack.h" />
     <ClInclude Include="qsort.h" />
+    <ClInclude Include="RBTree.h" />
     <ClInclude Include="selectionsort.h" />
     <ClInclude Include="shellsort.h" />
   </ItemGroup>

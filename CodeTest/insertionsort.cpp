@@ -1,6 +1,6 @@
 #include "insertionsort.h"
-/* 插入排序，时间复杂度O()
-
+/* 插入排序，时间复杂度O(n^2),空间复杂度O(1)
+将一个值插入到已经排好序的序列中
 */
 void insertionsort::sort(vector<int>& data)
 {
